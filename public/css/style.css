@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
 
 header {
-    background-color: lightseagreen;
+    background-color: #292973;
     color: white;
     padding: 10px;
 }
@@ -19,16 +19,71 @@ nav ul li a{
 }
 
 a:hover {
-    background-color: white;
-    color: lightseagreen;
+    color: #2893a6;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
-    color: blue;
+    color: #1377d4;
 }
 
 form {
     padding: 10px;
+    display: inline;
 }
 
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+.card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+  }
+  
+  .card__header,
+  .card__content {
+    padding: 1rem;
+  }
+  
+  .card__header h1,
+  .card__content h1,
+  .card__content h2,
+  .card__content p {
+    margin: 0;
+  }
+  
+  .card__actions {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card__actions button,
+  .card__actions a {
+    margin: 0 0.25rem;
+  }
+
+  .card__image {
+      padding: 10px;
+  }
+
+  .btn {
+      background-color: #eb9e1a;
+      color: #85175a;
+      padding: 10px;
+      border-style: solid;
+      border-radius: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+  }
+
+  .btn:hover {
+      background-color: #85175a;
+      color:#eb9e1a;
+  }
