@@ -18,6 +18,36 @@ nav ul li a{
     display: block;
 }
 
+.main-header__nav {
+  height: 100%;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-header__item {
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.main-header__item a,
+.main-header__item button {
+  font: inherit;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
 a:hover {
     color: #2893a6;
 }
@@ -86,4 +116,18 @@ form {
   .btn:hover {
       background-color: #85175a;
       color:#eb9e1a;
+  }
+
+  @media (min-width: 768px) {
+    .main-header__nav {
+      display: flex;
+    }
+  
+    #side-menu-toggle {
+      display: none;
+    }
+  
+    .user-message {
+      width: 30rem;
+    }
   }
